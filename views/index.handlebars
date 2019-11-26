@@ -1,6 +1,4 @@
-<h1>Eat Da Burger!</h1>
 
-<h2>Cats that are not sleepy!</h2>
 
 <ul>
   {{#each burgers}}
@@ -26,6 +24,12 @@
   <div class="form-group">
     <label for="burgs">Burger Name:</label>
     <input type="text" id="burgs" name="burger_name">
+  </div>
+
+  <div class="form-group">
+    <label for="sleepy">Sleepy?</label><br>
+    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
+    <input type="radio" name="sleepy" value="0"> Awake
   </div>
 
   <button type="submit">Add A Burger</button>
