@@ -1,6 +1,6 @@
 <article>
   <header>
-    <h1>Eat The Burger!</h1>
+    <h1>Wu-Tang Eat The Burger!</h1>
     
   </header>
 </article>
@@ -8,7 +8,7 @@
 <ul>
   {{#each burgers}}
   {{#unless devoured}}
-  {{> burgers/burger-block devoured=true}}
+  {{!-- {{> burgers/burger-block devoured=true}} --}}
   {{/unless}}
   {{/each}}
 </ul>
@@ -18,7 +18,7 @@
 <ul>
   {{#each burgers}}
   {{#if sleepy}}
-  {{> burgers/burger-block devoured=false}}
+  {{!-- {{> burgers/burger-block devoured=false}} --}}
   {{/if}}
   {{/each}}
 </ul>
