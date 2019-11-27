@@ -84,3 +84,13 @@ height:100%;
 	margin-top:70px;
 	margin-left:40px;
 }
+.handlebars { 
+    background-image: url(../assets/img/WuTangClanEatDaBurger.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  button{
+    margin: 0 auto;
+}

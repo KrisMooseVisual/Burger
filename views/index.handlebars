@@ -1,41 +1,50 @@
-<article>
-  <header>
-    <h1>Wu-Tang Eat The Burger!</h1>
-    
-  </header>
-</article>
+<!-- Jumbotron -->
+<div class="card card-image" style="background-image: url(../assets/img/WuTangClanEatDaBurger.jpg">
+  <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+    <div class="py-5">
+
+      <!-- Content -->
+      <h2 class="card-title h2 my-4 py-2">WU-TANG CLAN'S<Sect></Sect>
+      </h2>
+      <h2>Eat Da Burger</h2>
+      <p class="mb-4 pb-2 px-md-5 mx-md-5">
+        <a class="btn peach-gradient"><i class="fa fa-clone left"></i></a>
+        <h2>Enter a burger you want to eat, and click "Submit Da Burger" button</h2>
+
+    </div>
+  </div>
+</div>
+<!-- Jumbotron -->
+
 
 <ul>
   {{#each burgers}}
-  {{#unless devoured}}
-  {{!-- {{> burgers/burger-block devoured=true}} --}}
+  {{#unless this.devoured}}
   {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Cats that are sleepy!</h2>
 
 <ul>
   {{#each burgers}}
-  {{#if sleepy}}
-  {{!-- {{> burgers/burger-block devoured=false}} --}}
+  {{#if this.devoured}}
   {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a burger</h2>
-<form class="create-form">
 
-  <div class="form-group">
-    <label for="burgs">Burger Name:</label>
-    <input type="text" id="burgs" name="burger_name">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center enter_section">
+      <form class="create-form">
+        <div>
+          <form method="POST" action="api/burgers" class="addOne text-center">
+            <textarea id="textArea" type="text" name="burger_name" rows="2" cols="40"></textarea>
+            <button class="btn btn-primary" id="bgrCreateBtn" type="submit">Submit Da Burger</button>
+          </form>
+        </div>
+      </form>
+    </div>
   </div>
-
-  {{!-- <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div> --}}
-
-  <button type="submit">Submit Da Burger</button>
-</form>
+</div>
