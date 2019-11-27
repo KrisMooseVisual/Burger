@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+/* @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
 body{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight:300;
@@ -83,14 +83,15 @@ height:100%;
 	font-weight: 100;
 	margin-top:70px;
 	margin-left:40px;
-}
-.handlebars { 
-    background-image: url(../assets/img/WuTangClanEatDaBurger.jpg) no-repeat center center fixed; 
+} */
+.jumbotron { 
+    background-size: 100% 100%
+    /* background-image: url(../assets/img/WuTangClanEatDaBurger.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
   }
-  button{
+  button {
     margin: 0 auto;
 }

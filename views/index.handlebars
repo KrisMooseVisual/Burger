@@ -4,35 +4,17 @@
     <div class="py-5">
 
       <!-- Content -->
-      <h2 class="card-title h2 my-4 py-2">WU-TANG CLAN'S<Sect></Sect>
+      <h2 class="card-title h2 my-4 py-2">WU-TANG CLAN'S<Sect>Eat Da Burger</Sect>
       </h2>
       <h2>Eat Da Burger</h2>
       <p class="mb-4 pb-2 px-md-5 mx-md-5">
         <a class="btn peach-gradient"><i class="fa fa-clone left"></i></a>
-        <h2>Enter a burger you want to eat, and click "Submit Da Burger" button</h2>
+        <h2>Enter a burger you want to eat, and click "Create Da Burger" button</h2>
 
     </div>
   </div>
 </div>
-<!-- Jumbotron -->
-
-
-<ul>
-  {{#each burgers}}
-  {{#unless this.devoured}}
-  {{/unless}}
-  {{/each}}
-</ul>
-
-
-<ul>
-  {{#each burgers}}
-  {{#if this.devoured}}
-  {{/if}}
-  {{/each}}
-</ul>
-
-
+<!-- Jumbotron End -->
 
 <div class="container">
   <div class="row">
@@ -41,10 +23,51 @@
         <div>
           <form method="POST" action="api/burgers" class="addOne text-center">
             <textarea id="textArea" type="text" name="burger_name" rows="2" cols="40"></textarea>
-            <button class="btn btn-primary" id="bgrCreateBtn" type="submit">Submit Da Burger</button>
+            <button class="btn btn-primary" id="btnMake" type="submit">Create Da Burger</button>
           </form>
         </div>
       </form>
     </div>
+
+
+
+    <div class="row mt-4">
+      <div class="col-md-6 mt-4">
+        <div class="card-body">
+          <h2 class="heading headTitle">Da New Burgers</h2>
+          <ul>
+            {{#each burgers}}
+            {{#unless this.devoured}}
+              <p class="burgerType">{{this.burger_name}}</p>
+              <form action="api/burgers/{{this.id}}?_method=PUT" method="POST" class="dev">
+                <input type="hidden" name="devoured" value="true">
+                <br>
+                <button class="btnDevour" type="submit">Devour Da Burger></button>
+              </form>            
+            {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-6 mt-4">
+      <div class="card devoured-card" id="devouredCard">
+        <ul>
+          {{#each burgers}}
+          {{#if this.devoured}}
+          <li>
+            <p class="burgerType">{{this.burger_name}}</p>
+          </li>
+          {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+
+
   </div>
+
+
 </div>
