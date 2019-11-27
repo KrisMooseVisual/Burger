@@ -85,13 +85,10 @@ height:100%;
 	margin-left:40px;
 } */
 .jumbotron { 
-    background-size: 100% 100%
-    /* background-image: url(../assets/img/WuTangClanEatDaBurger.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
+    background-size: cover;
+    background-image: url(../assets/img/WuTangClanEatDaBurger.jpg) no-repeat center center fixed; 
   }
+  
   button {
     margin: 0 auto;
 }
