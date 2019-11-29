@@ -1,4 +1,3 @@
--- SEED DATA FOR BURGERS_DB DATABASE
 INSERT INTO burgers (burger_name, devoured) VALUES ("Rza's Razor Sharp Cheddar Cheeseburger", false);
 INSERT INTO burgers (burger_name, devoured) VALUES ("The Gza Genius Burger", false);
 INSERT INTO burgers (burger_name, devoured) VALUES ("M.E.T.H.O.D Hungry Man Burger", false);
