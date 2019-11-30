@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS contacts;
+
 CREATE DATABASE burgers_db;
 USE burgers_db;
 

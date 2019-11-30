@@ -1,19 +1,19 @@
 //AJAX CALLING FOR BUTTON ACTIONS
-$(function () {
+$(document).ready(function () {
 
-    $(".create-form").on(submit, function (event) {
+    $("#create-form").on("submit", function (event) {
         event.precventDefault();
 
-        var newBurger = {
-            burger_name: $("#newburger").val().trim(), devoured: 0
+        var makeBurger = {
+            burger_name: $("#newBurger").val().trim()
         };
 
         //POST REQUEST
         $.ajax("/api/burgers", {
             type: "POST",
-            data: newBurger
+            data: makeBurger
         }).then(function () {
-            console.log("New Burger Added");
+            console.log("New burger made");
             location.reload();
         })
     });
@@ -22,7 +22,7 @@ $(function () {
     $(".eatDaBurger").on("click", function (event) {
         event.preventDefault();
 
-        var id = $(this).data("id");
+        var id = $(this).attr("data-id");
         var devouredBurger = {
             devoured: 1
         };
@@ -31,7 +31,7 @@ $(function () {
             type: "PUT",
             data: devouredBurger
         }).then(function () {
-            console.log("Da Burger Devoured");
+            console.log("Burger Devoured");
             location.reload();
         });
     });
