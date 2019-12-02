@@ -1,4 +1,4 @@
-# EAT DA BURGER APP!
+# EAT DA BURGER APP
 
 * With the usage of Node.js, MySQL, Express.js, and Handlebars, 
  this app shows how CRUD is performed within the application.
@@ -16,4 +16,7 @@
  * JavaScript
  
  # Below see screenshots and video demo.
- 
+
+![Wu Tang Clans Eat Da Burger](https://i.ibb.co/k3948FH/Wu-Tang-Clan-Eat-Da-Burger.jpg)
+
+[![Alt text](https://youtu.be/7Z-5_O-jD1A)
