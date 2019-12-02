@@ -9,7 +9,7 @@
           <ul>
             {{#each burgers}}
             {{#unless devoured}}
-            {{> burgers/burger-block devoured=false}}
+            {{> burgers/burger-block devoured=1}}
             {{/unless}}
             {{/each}}
           </ul>
@@ -17,6 +17,7 @@
         </div>
       </div>
     </div>
+    
 
     <div class="col-sm-6">
       <div class="card" style="width: 18rem;">
@@ -25,15 +26,19 @@
           <ul>
             {{#each burgers}}
             {{#if devoured}}
-            <div>{{id}}. {{burger_name}}</div>
+            {{> burgers/burger-block devoured=0}}>
             {{/if}}
             {{/each}}
           </ul>
         </div>
       </div>
     </div>
+
+
   </div>
 
-
-
+</div>
+<hr>
+<div id ="footerSection">
+  <h4>Mustafa Muhammad 2019</h4>
 </div>

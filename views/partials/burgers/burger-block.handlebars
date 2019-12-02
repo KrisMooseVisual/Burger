@@ -1,18 +1,7 @@
-<p align="center">
-	{{#if devoured}}
-	
-	{{id}}.
-	{{burger_name}}
-
-	{{else}}
-
-	{{id}}.
+<li>
 	{{burger_name}}
 
 	<button type="button" class="btn btn-primary" data-toggle="button" class="change-devour" data-id="{{id}}" data-newdevour="true">
-		Devour
+		{{#if devoured}}Devour Da Burger{{else}} Order Again{{/if}}
 	</button>
-
-	{{/if}}
-
-</p>
+</li>
