@@ -28,7 +28,8 @@
     <div class="container d-flex align-items-center flex-column">
 
       <!-- Masthead Heading -->
-      <img src="https://i.ibb.co/k3948FH/Wu-Tang-Clan-Eat-Da-Burger.jpg" alt="Wu-Tang-Clan-Eat-Da-Burger" border="0" class="rounded" alt="Cinque Terre">
+      <img src="https://i.ibb.co/k3948FH/Wu-Tang-Clan-Eat-Da-Burger.jpg" alt="Wu-Tang-Clan-Eat-Da-Burger" border="0"
+        class="rounded" alt="Cinque Terre">
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
@@ -38,23 +39,21 @@
         </div>
         <div class="divider-custom-line"></div>
       </div>
-
-      <!-- Masthead Subheading -->
-      {{!-- <p class="masthead-subheading font-weight-light mb-0">Create Da Burger - Eat Da Burger</p> --}}
     </div>
   </header>
 
   <section class="page-section portfolio" id="portfolio">
     <div class="container">
 
-      {{!-- <div class="divider-custom">
+      <div class="divider-custom">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
           <i class="fas fa-star"></i>
         </div>
         <div class="divider-custom-line"></div>
-      </div> --}}
+      </div>
 
+      <!--DEVOUR A BURGER BLOCK-->
       <div class="row">
         <div class="col-md-6">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
@@ -63,12 +62,13 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <h5 class="masthead-subheading font-weight-light mb-0">Click Image To Devour A Burger!</h5> 
+            <h5 class="masthead-subheading font-weight-light mb-0">Click Image To Devour A Burger!</h5>
             <img class="img-fluid" src="https://i.ibb.co/NNnbDLd/The-Wu.jpg" alt="Wu Burger">
           </div>
         </div>
+        <!--END DEVOUR A BURGER-->
 
-
+        <!--CREATE BURGER BLOCK-->
         <div class="col-md-6">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -76,11 +76,26 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <h5 class="masthead-subheading font-weight-light mb-0">Click Image To Trash A Burger!</h5> 
-            <img class="img-fluid" src="https://i.ibb.co/TL2VH0j/36-Chambers.jpg" alt="eat-Da-Burger" alt="Devour Burger">
+            <h5 class="masthead-subheading font-weight-light mb-0">Click Image To Create A Burger!</h5>
+            <img class="img-fluid" src="https://i.ibb.co/mt9zQ7b/wu-tang-clan-js.jpg" alt="Devour Burger">
           </div>
         </div>
+        <!--END CREATE BURGER-->
 
+        <!--TRASH BURGER BLOCK-->
+        <div class="col-md-6">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <h5 class="masthead-subheading font-weight-light mb-0">Click Image To Trash A Burger!</h5>
+            <img class="img-fluid" src="https://i.ibb.co/TL2VH0j/36-Chambers.jpg" alt="eat-Da-Burger"
+              alt="Trash Burger">
+          </div>
+        </div>
+        <!--END TRASH BURGER-->
       </div>
       <!-- /.row -->
 
@@ -116,7 +131,7 @@
     </a>
   </div>
 
-
+  <!--DEVOUR BURGER MODAL-->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
     aria-labelledby="portfolioModal1Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
@@ -161,7 +176,9 @@
       </div>
     </div>
   </div>
+  <!--END DEVOUR BURGER MODAL-->
 
+  <!--CREATE BURGER MODAL-->
   <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
     aria-labelledby="portfolioModal6Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
@@ -176,7 +193,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
 
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Trash Burger</h2>
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Create Da Burger</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -186,19 +203,9 @@
                   <div class="divider-custom-line"></div>
                 </div>
 
-                <img class="img-fluid rounded mb-5" src="/public/assets/images/pics/eatDaBurger.jpg" alt="">
-
-                <ul>
-                  {{#each burgers}}
-                  {{#if devoured}}
-                  {{> burgers/burger-block devoured=0}}>
-                  {{/if}}
-                  {{/each}}
-                </ul>
-
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
-                  Trash Da Burger
+                  Create Da Burger
                 </button>
 
               </div>
@@ -208,6 +215,54 @@
       </div>
     </div>
   </div>
+  <!--END CREATE MODAL-->
+
+  <!--TRASH BURGER MODAL-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
+      aria-labelledby="portfolioModal6Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+              <i class="fas fa-times"></i>
+            </span>
+          </button>
+          <div class="modal-body text-center">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                  <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Trash Da Burger</h2>
+                  <!-- Icon Divider -->
+                  <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                  </div>
+
+                  <ul>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    {{> burgers/burger-block devoured=0}}>
+                    {{/if}}
+                    {{/each}}
+                  </ul>
+
+                  <button class="btn btn-primary" data-dismiss="modal">
+                    <i class="fas fa-times fa-fw"></i>
+                    Trash 
+                  </button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--END TRASH BURGER MODAL-->
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
