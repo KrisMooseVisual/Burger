@@ -27,11 +27,8 @@
   <header class="masthead bg-primary text-white text-center">
     <div class="container d-flex align-items-center flex-column">
 
-      <!-- Masthead Avatar Image -->
-      <img src="/public/assets/images/pics/eatdawuburgercircle.png">
-
       <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-0">EAT DA BURGER</h1>
+      <img src="https://i.ibb.co/k3948FH/Wu-Tang-Clan-Eat-Da-Burger.jpg" alt="Wu-Tang-Clan-Eat-Da-Burger" border="0" class="rounded-circle" alt="Cinque Terre">
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
@@ -43,8 +40,7 @@
       </div>
 
       <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">Create Da Burger - Eat Da Burger</p>
-
+      {{!-- <p class="masthead-subheading font-weight-light mb-0">Create Da Burger - Eat Da Burger</p> --}}
     </div>
   </header>
 
@@ -67,7 +63,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="/images/pics/eatdawuburgercircle.png" alt="Wu Burger">
+            <img class="img-fluid" src="https://i.ibb.co/k3948FH/Wu-Tang-Clan-Eat-Da-Burger.jpg" alt="Wu Burger">
           </div>
         </div>
 
@@ -79,7 +75,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="/public/assets/images/pics/eatDaBurger.jpg" alt="Devour Burger">
+            <img class="img-fluid" src="https://i.ibb.co/CQrGm0Q/eat-Da-Burger.jpg" alt="eat-Da-Burger" alt="Devour Burger">
           </div>
         </div>
 
@@ -96,18 +92,11 @@
 
         <!-- Footer Social Icons -->
         <div class="col-lg-4 mb-5 mb-lg-0">
+          <p class="masthead-subheading font-weight-light mb-0">GitHub Link</p>
           <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/KrisMooseVisual/Burger">
             <i class="fab fa-github"></i>
           </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-twitter"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-linkedin-in"></i>
-          </a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#">
-            <i class="fab fa-fw fa-dribbble"></i>
-          </a>
+
         </div>
       </div>
     </div>
@@ -139,7 +128,7 @@
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
-                
+
                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Devour Burger</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
@@ -149,18 +138,20 @@
                   </div>
                   <div class="divider-custom-line"></div>
                 </div>
-                
-                <img class="img-fluid rounded mb-5" src="img/portfolio/cabin.png" alt="">
-                
-                <li>
-                  <ul>
-                    {{#each burgers}}
-                    {{#unless devoured}}
-                    {{> burgers/burger-block devoured=1}}
-                    {{/unless}}
-                    {{/each}}
-                  </ul>
-                </li>                  
+
+                <ul>
+                  {{#each burgers}}
+                  {{#unless devoured}}
+                  {{> burgers/burger-block devoured=0}}>
+                  {{/unless}}
+                  {{/each}}
+                </ul>
+
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Devour Burger
+                </button>
+
               </div>
             </div>
           </div>
@@ -169,7 +160,6 @@
     </div>
   </div>
 
-  <!-- Portfolio Modal 6 -->
   <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
     aria-labelledby="portfolioModal6Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
@@ -183,7 +173,7 @@
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
+
                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Trash Burger</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
@@ -193,8 +183,9 @@
                   </div>
                   <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/submarine.png" alt="">
+
+                <img class="img-fluid rounded mb-5" src="/public/assets/images/pics/eatDaBurger.jpg" alt="">
+
                 <ul>
                   {{#each burgers}}
                   {{#if devoured}}
@@ -202,10 +193,12 @@
                   {{/if}}
                   {{/each}}
                 </ul>
+
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
-                  Close Window
+                  Trash Da Burger
                 </button>
+
               </div>
             </div>
           </div>
