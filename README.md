@@ -19,4 +19,4 @@
 
 ![Wu Tang Clans Eat Da Burger](https://i.ibb.co/k3948FH/Wu-Tang-Clan-Eat-Da-Burger.jpg)
 
-![WU TANG CLANS EAT DA BURGER DEMO VID](https://youtu.be/7Z-5_O-jD1A)
+![WU TANG CLANS EAT DA BURGER DEMO VID](https://i.ibb.co/NNnbDLd/The-Wu.jpg)(https://youtu.be/7Z-5_O-jD1A)
